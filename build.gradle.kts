@@ -27,10 +27,10 @@ labyMod {
     }
 
     addonInfo {
-        namespace = "tutorial"
-        displayName = "Tutorial Addon"
+        namespace = "spawnerleeraddon"
+        displayName = "Spawner Leer Addon"
         author = "Hapticdc"
-        description = "Ein Eigenes Addon"
+        description = "Ein Addon Das Automatisch Spawner leer macht"
         minecraftVersion = "*"
         version = rootProject.version.toString()
     }
