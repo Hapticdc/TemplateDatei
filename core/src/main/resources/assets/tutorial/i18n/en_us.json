@@ -4,6 +4,25 @@
             "name": "Tutorial Addon",
             "enabled": {
                 "name": "Enabled"
+            },
+            "keys":{
+                "name": "Key Settings",
+                "key": {
+                    "name": "key",
+                },
+                "keys": {
+                    "name": "keys"
+                },
+                "button": {
+                    "name": "Testbutton",
+                    "text": "Klick!"
+                }
+            },
+            "text": "TextField"
+        },
+        "header": {
+            "custom": {
+                "name": "Custom Subcategories"
             }
         }
     }
