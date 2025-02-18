@@ -1,0 +1,10 @@
+{
+    "tutorial": {
+        "settings": {
+            "name": "Tutorial Addon",
+            "enabled": {
+                "name": "Enabled"
+            }
+        }
+    }
+}

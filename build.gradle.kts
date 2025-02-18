@@ -8,8 +8,12 @@ val versions = providers.gradleProperty("net.labymod.minecraft-versions").get().
 group = "org.example"
 version = providers.environmentVariable("VERSION").getOrElse("1.0.0")
 
+tasks.withType<JavaCompile>{
+    options.encoding = "UTF-8"
+}
+
 labyMod {
-    defaultPackageName = "org.example" //change this to your main package name (used by all modules)
+    defaultPackageName = "de.hapticdc.tutorial" //change this to your main package name (used by all modules)
 
     minecraft {
         registerVersion(versions.toTypedArray()) {
@@ -23,10 +27,10 @@ labyMod {
     }
 
     addonInfo {
-        namespace = "example"
-        displayName = "ExampleAddon"
-        author = "Example Author"
-        description = "Example Description"
+        namespace = "tutorial"
+        displayName = "Tutorial Addon"
+        author = "Hapticdc"
+        description = "Ein Eigenes Addon"
         minecraftVersion = "*"
         version = rootProject.version.toString()
     }
